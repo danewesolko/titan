@@ -1,0 +1,115 @@
+.body-wrapper-1 {
+  min-height: 400px;
+  background: linear-gradient(to bottom right, rgba(255,244,129, 1) 0%, rgba(255,210,78, .5) 50%, rgba(206,113,14, 1) 100%), url("img/body-bkgrnd-1.jpg") no-repeat;
+  background-size: cover !important;
+  .body-txt-wrapper-1 {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 120px 24px;
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    @include align-items(center);
+    @include align-content(center);
+    .body-txt{
+      padding: 48px;
+      background: $gradient;
+      box-shadow: $shadow;
+      border-top: $top-border;
+      @include media($mobile) {
+        width: 100%;
+      }
+      @include media($tablet) {
+        width: 60%;
+      }
+      @include media($desktop) {
+        width: 45%;
+      }
+      .copy {
+        color: $white;
+        font-size: 1.2em;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: $base-line-height * 1.25;
+      }
+    }
+  }
+}
+
+.body-wrapper-2 {
+  min-height: 400px;
+  background: linear-gradient(to bottom right, rgba(255,244,129, 1) 0%, rgba(255,210,78, .5) 50%, rgba(206,113,14, 1) 100%), url("img/body-bkgrnd-2.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  .body-txt-wrapper-2 {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 120px 24px;
+    @include display(flex);
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(flex-end);
+    @include align-items(center);
+    @include align-content(center);
+    .body-txt{
+      padding: 48px;
+      background: $gradient;
+      box-shadow: $shadow;
+      border-top: $top-border;
+      @include media($mobile) {
+        width: 100%;
+      }
+      @include media($tablet) {
+        width: 60%;
+      }
+      @include media($desktop) {
+        width: 45%;
+      }
+      .copy {
+        color: $white;
+        font-size: 1.2em;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: $base-line-height * 1.25;
+      }
+    }
+  }
+}
+
+.body-wrapper-3 {
+  min-height: 400px;
+  background: linear-gradient(to bottom right, rgba(255,244,129, 1) 0%, rgba(255,210,78, .5) 50%, rgba(206,113,14, 1) 100%), url("img/body-bkgrnd-3.jpg") no-repeat;
+  background-size: cover !important;
+  .body-txt-wrapper-3 {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 120px 24px;
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    @include align-items(center);
+    @include align-content(center);
+    .body-txt{
+      padding: 48px;
+      background: $gradient;
+      box-shadow: $shadow;
+      border-top: $top-border;
+      @include media($mobile) {
+        width: 100%;
+      }
+      @include media($tablet) {
+        width: 60%;
+      }
+      @include media($desktop) {
+        width: 45%;
+      }
+      .copy {
+        color: $white;
+        font-weight: 300;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        line-height: $base-line-height * 1.25;
+      }
+    }
+  }
+}

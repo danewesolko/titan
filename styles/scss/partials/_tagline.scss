@@ -1,0 +1,18 @@
+.tagline-wrapper{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 96px 24px;
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(center);
+  @include align-content(center);
+.tagline {
+  text-align: center;
+  width: 80%;
+  .tagline-txt {
+    font-size: 2em;
+    line-height: $base-line-height * 1.2em;
+    color: $dark-blue;
+  }
+}
+}

@@ -1,0 +1,77 @@
+.header {
+  min-height: 96px;
+  max-width: 1170px;
+  margin: 0 auto;
+  @include display(flex);
+  @include media($mobile) {
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+    @include justify-content(flex-start);
+    @include align-items(flex-start);
+    @include align-content(flex-start);
+    padding: 48px 24px 0;
+  }
+  @include media($tablet) {
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include align-content(center);
+    padding: 48px 24px 0;
+  }
+  @include media($desktop) {
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include align-content(center);
+    padding: 48px 24px 24px;
+  }
+  .logo {
+    float: left;
+    .brand{
+      font-family: 'Cardo', serif;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: white;
+      display: inline-block;
+    }
+    .logomrk {
+      width: 36px;
+      height: 36px;
+      border: 2px solid white;
+      margin-right: 18px;
+      padding-top: 5px;
+      padding-left: 10px;
+    }
+  }
+  .cta {
+    float: right;
+    padding-top: 5px;
+    .cta-txt {
+      font-family: 'Cardo', serif;
+      font-style: italic;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: white;
+      display: inline-block;
+      margin-right: 1em;
+      border-bottom: none !important;
+      padding-bottom: none !important;
+    }
+    .cta-btn-sml {
+      border: $base-border;
+      color: $white;
+      background-color: transparent;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 1px;
+      &:hover {
+        color: $white;
+        background-color: $blue;
+      }
+    }
+  }
+}

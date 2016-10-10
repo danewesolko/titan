@@ -1,0 +1,85 @@
+.process-wrapper {
+  width: 100%;
+  background: $gray-gradient;
+  .process {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 96px 24px;
+    @include display(flex);
+    @include flex-direction(column);
+    @include flex-wrap(wrap);
+    @include justify-content(space-between);
+    @include align-items(flex-start);
+    @include align-content(flex-start);
+    .prcss-txt {
+      @include media($mobile) {
+        width: 100%;
+      }
+      @include media($tablet) {
+        width: 60%;
+      }
+      @include media($desktop) {
+        width: 50%;
+      }
+      margin-bottom: 48px;
+      h1 {
+        border-bottom: 2px solid $dark-blue;
+        font-size: 3.5em;
+        color: $dark-blue;
+        .bold-cap {
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+      .copy {
+        font-size: 1.2em;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: $base-line-height * 1.25;
+      }
+    }
+    .prcss-lst {
+
+      .prcss-lst-lst {
+        @include display(flex);
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+        @include align-items(flex-start);
+        @include align-content(space-between);
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: $base-line-height;
+        .prcss-lst-itm {
+          @include media($mobile) {
+            @include flex-basis(100%);
+            @include align-self(stretch);
+          }
+          @include media($tablet) {
+            @include flex-basis(45%);
+            @include align-self(stretch);
+          }
+          @include media($desktop) {
+            @include flex-basis(30%);
+            @include align-self(stretch);
+          }
+          padding: 48px;
+          margin-bottom: 48px;
+          border: $dark-border;
+          background: $gray-gradient;
+          box-shadow: $light-shadow;
+          h3 {
+            font-family: $base-font-family;
+            margin-bottom: 6px;
+            color: $dark-blue;
+          }
+        }
+        .prcss-icn {
+          width: 20%;
+          display: block;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}

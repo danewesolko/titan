@@ -1,0 +1,39 @@
+.main-cta {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 96px 24px;
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(center);
+  @include align-content(center);
+  .main-cta-wrapper {
+    text-align: center;
+    width: 80%;
+    h1 {
+      color: $white;
+      font-size: 3em;
+      line-height: $base-line-height * 1.2em;
+      margin-bottom: 48px;
+    }
+    p {
+      color: $white;
+      font-weight: 300;
+      font-size: 1.2em;
+      line-height: $base-line-height * 1.2em;
+      margin-bottom: 60px;
+    }
+    .main-cta-btn {
+      border: $base-border;
+      color: $white;
+      background-color: transparent;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: 300;
+      letter-spacing: 1px;
+      &:hover {
+        color: $white;
+        background-color: $blue;
+      }
+    }
+  }
+}
